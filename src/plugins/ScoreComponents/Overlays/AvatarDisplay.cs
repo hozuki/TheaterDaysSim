@@ -206,8 +206,10 @@ namespace OpenMLTD.MilliSim.Extension.Components.ScoreComponents.Overlays {
         }
 
         protected override void Dispose(bool disposing) {
-            foreach (var image in _avatarImages) {
-                image?.Dispose();
+            if (_avatarImages != null) {
+                foreach (var image in _avatarImages) {
+                    image?.Dispose();
+                }
             }
 
             _avatarImages = null;
@@ -266,10 +268,10 @@ namespace OpenMLTD.MilliSim.Extension.Components.ScoreComponents.Overlays {
 
         private Rectangle[] _avatarRectangles;
 
-        [ItemCanBeNull]
+        [CanBeNull, ItemCanBeNull]
         private Texture2D[] _avatarImages;
 
-        [ItemCanBeNull]
+        [CanBeNull, ItemCanBeNull]
         private byte[][] _avatarImagesData;
 
         private OngoingAnimation _ongoingAnimation = OngoingAnimation.None;
