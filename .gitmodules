@@ -1,0 +1,9 @@
+[submodule "thirdparty/UnityStudioLib"]
+	path = thirdparty/UnityStudioLib
+	url = https://github.com/OpenMLTD/UnityStudioLib.git
+[submodule "thirdparty/piyopiyo"]
+	path = thirdparty/piyopiyo
+	url = https://github.com/hozuki/piyopiyo
+[submodule "thirdparty/MilliSim"]
+	path = thirdparty/MilliSim
+	url = https://github.com/hozuki/MilliSim.git
