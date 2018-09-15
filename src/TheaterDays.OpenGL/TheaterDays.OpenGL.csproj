@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="JetBrains.Annotations, Version=11.1.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\JetBrains.Annotations.11.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+      <HintPath>..\packages\JetBrains.Annotations.11.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MonoGame.Framework">
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
@@ -123,6 +123,18 @@
     <ProjectReference Include="..\..\thirdparty\MilliSim\src\plugins\OpenMLTD.MilliSim.Extension.Components.CoreComponents\OpenMLTD.MilliSim.Extension.Components.CoreComponents.csproj">
       <Project>{16575a6d-f4a1-4910-a112-db1d62ef6342}</Project>
       <Name>OpenMLTD.MilliSim.Extension.Components.CoreComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\plugins\StandardNoteAnimations\TheaterDays.Scores.StandardNoteAnimations.csproj">
+      <Project>{a2211c66-972c-4fc5-ad53-70c5b901a361}</Project>
+      <Name>TheaterDays.Scores.StandardNoteAnimations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\plugins\StandardScoreFormats.Mltd\TheaterDays.Scores.StandardScoreFormats.Mltd.csproj">
+      <Project>{22aeef23-15ff-4b6c-941d-550c63f50329}</Project>
+      <Name>TheaterDays.Scores.StandardScoreFormats.Mltd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\plugins\StandardScoreFormats.StarlightDirector\TheaterDays.Scores.StandardScoreFormats.StarlightDirector.csproj">
+      <Project>{c8ccfc8f-b5e6-4393-baa7-d073d86549ee}</Project>
+      <Name>TheaterDays.Scores.StandardScoreFormats.StarlightDirector</Name>
     </ProjectReference>
     <ProjectReference Include="..\TheaterDays\TheaterDays.csproj">
       <Project>{1d0434ac-993a-4c26-8359-8d3fa86ddae7}</Project>

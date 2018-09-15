@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1D0434AC-993A-4C26-8359-8D3FA86DDAE7}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>OpenMLTD.TheaterDays</RootNamespace>
     <AssemblyName>TheaterDays</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -54,6 +54,9 @@
   <PropertyGroup>
     <ApplicationIcon>
     </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommandLine, Version=2.2.1.0, Culture=neutral, PublicKeyToken=de6f01bd326f8c32, processorArchitecture=MSIL">
@@ -169,6 +172,7 @@
     <ProjectReference Include="..\plugins\StandardNoteAnimations\TheaterDays.Scores.StandardNoteAnimations.csproj">
       <Project>{a2211c66-972c-4fc5-ad53-70c5b901a361}</Project>
       <Name>TheaterDays.Scores.StandardNoteAnimations</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\plugins\StandardScoreFormats.Mltd\TheaterDays.Scores.StandardScoreFormats.Mltd.csproj">
       <Project>{22aeef23-15ff-4b6c-941d-550c63f50329}</Project>
