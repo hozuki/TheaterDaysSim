@@ -24,7 +24,7 @@ build_script:
   #- cmd: node scripts\appveyor_nuget_pack.js
 after_build:
   - ps: .\scripts\extract-openal-soft.ps1 -destination $Env:APPVEYOR_BUILD_FOLDER\src\TheaterDays.Direct3D11\bin\Windows\x86\$Env:CONFIGURATION\
-  # - cmd: marked ./README.md -o ./README.html
+  - cmd: marked ./README.md -o ./README.html
   # - cmd: node scripts\appveyor_copy_licenses.js
   - cmd: del %APPVEYOR_BUILD_FOLDER%\src\TheaterDays.Direct3D11\bin\Windows\x86\%CONFIGURATION%\*.xml
   - cmd: del %APPVEYOR_BUILD_FOLDER%\src\TheaterDays.Direct3D11\bin\Windows\x86\%CONFIGURATION%\*.pdb
