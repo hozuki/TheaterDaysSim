@@ -15,7 +15,7 @@ before_build:
   - cmd: nuget update -self
   - cmd: git submodule update --init --recursive
   - cmd: npm install
-  # - cmd: npm install -g marked
+  - cmd: npm install -g marked
   - ps: .\scripts\nuget_restore.ps1
   - cmd: node scripts\patch_asminfo.js
   - ps: .\scripts\install_monogame.ps1
