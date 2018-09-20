@@ -5,6 +5,7 @@ using OpenMLTD.TheaterDays.Configuration;
 using OpenMLTD.TheaterDays.Configuration.Extending;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
+using YamlDotNet.Serialization.TypeInspectors;
 
 namespace OpenMLTD.TheaterDays.Subsystems.Configuration {
     internal static class ConfigurationHelper {
@@ -13,8 +14,11 @@ namespace OpenMLTD.TheaterDays.Subsystems.Configuration {
             var typeConverterFactories = pluginManager.GetPluginsOfType<IConfigTypeConverterFactory>();
 
             var deserializerBuilder = new DeserializerBuilder()
-                .IgnoreUnmatchedProperties()
-                .WithNamingConvention(new UnderscoredNamingConvention());
+                .WithTypeInspector(inspector => new DataContractTypeInspector(inspector) {
+                    NamingConvention = new UnderscoredNamingConvention(),
+                    DataMemberSerialization = DataMemberSerialization.OptIn
+                })
+                .IgnoreUnmatchedProperties();
 
             // External converters
             foreach (var factory in typeConverterFactories) {

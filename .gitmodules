@@ -7,3 +7,6 @@
 [submodule "thirdparty/MilliSim"]
 	path = thirdparty/MilliSim
 	url = https://github.com/hozuki/MilliSim.git
+[submodule "thirdparty/YamlDotNet.DataContract"]
+	path = thirdparty/YamlDotNet.DataContract
+	url = https://github.com/hozuki/YamlDotNet.DataContract

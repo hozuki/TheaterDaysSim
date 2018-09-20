@@ -161,6 +161,10 @@
       <Project>{84a82e83-d04f-49b4-ad55-c6f4cc800f05}</Project>
       <Name>OpenMLTD.Piyopiyo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\thirdparty\YamlDotNet.DataContract\YamlDotNet.DataContract\YamlDotNet.DataContract.csproj">
+      <Project>{3d20bfc7-16e4-4bc1-9812-48fd42a1056d}</Project>
+      <Name>YamlDotNet.DataContract</Name>
+    </ProjectReference>
     <ProjectReference Include="..\plugins\ExtraComponents\TheaterDays.ExtraComponents.csproj">
       <Project>{358e00ca-caf9-42ae-ae0d-2af1f8913431}</Project>
       <Name>TheaterDays.ExtraComponents</Name>
